@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easily handle images in your app</title>
+    
+    <link rel="stylesheet" href="/assets/index-1bb8f294.css">
+  </head>
+  <body class="bg-gradient-to-r from-black via-violet-950 to-black text-white">
+    <nav class="navbar sticky top-0 bg-transparent z-10 backdrop-filter backdrop-blur-lg bg-opacity-30  border-b border-purple-800 ">
+      <div class="flex justify-between">
+        <div class="logo flex">
+          <a class="m-4 cursor-pointer font-bold text-lg hover:text-purple-300" href="index.html">EdgeStore</a>
+          <h1 class="m-4 font-bold text-lg hover:text-purple-300"><a href="">Tutorial</a></h1>
+        </div>
+        <div class="github flex">
+          <img class="m-4 cursor-pointer w-8 h-8 hover:text-purple-300" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFl0lEQVR4nO2abWiWZRTHf0u3Z2Wlj62pmNkLlSsZBAkVLYioLco0kMKsyMqCUb6sN3oljBBNCmwt+lBB0ofqU2amERZY2XovlmtLI20KoYWEq+msJw79Lzjc3vf9vM8K/3DDdl/nOte5Xs45/3PdDxzB/xdZYDbwJPAW8B3wK7Bfj/3dqzaTmQWM41+CDDAP2AAcBHJFPtZnvXSYrhHH0UAHsNMZNQRsBB7RzjRpl2qBOv19ttoeBd5Tn9DfdC0B6kdqElcAW50BnwK3AWNL0GVH63bgc6fve6CNKsJWqssNaINfXkH9ZvyXTn9nNY7bBOAzDTAI3AWMqvQg/KNzEfC7xvoEaKyU8lO03TlFnelUH81AnztqZkNZOFFhNKxOAyOH8cCHGtt8cmI5PhGO00fAGEYexwIfu6BSks90ueNkqxNwKrAb+AX4Clipo1AqzgeeBXqAvcAPkZ1vcMfMAkDRITY4dtQnXo9JbH8CLwOTgFbgKWAT0A/s09OvdzbxS4GTgTUJibIzMmazCwCmv+BkF/KERaco9qrteuBaYHUksRX7/AY8r0R5p3PwKBa7toKSZofLE9EQW+sMsAkHTAXe1c5sBh4AWoAz5Ftj9PfFwMPyvb+0uz68TnaTi2K0jnJOk0pFxtGOuGRXA/whI46JGcgMKRRTpc9jksb+Oc+RH8jn+PNchEhCcDzjUpVGi4uScahxdMaOdiI2SMi4UxJek8wNVB73FBCd7pDMuiSBrGj1UB4CuFKKnqPyeEO6706Ryaq+GU6yc7aUGBVPQqMc0Zz6gvLtTrRhIBJMonhfcjPTVtrqiSQ8KJlXqB42aoybUmQek8yKuMa1arQSNAmBslxC9XCjxjBfTMI1knkzrrE/TzQaLR86WOWydJrs2JIic45kjNAegj1qPCGhc4PaTa6aOEnj/JgiE2wxzncI9qvR6us4ZNRu0eIoqodzNc7XKTLBFouwiRP5Ftil6xv/hB3LiQFXC3M0hjGIbcCOiB3bNcnEiQRDLxRVyLo4fZz+D2zVytFqYbXGeELFVDbyTHEMYHeasy8W6XsReEd0pV/8Z8id32oUWme5MfbpZPTJBmMdLygFdKQ5+1rHc5YDC8T9zwPO1C7ZznwguZcq7CumO1SDz7jVnyYb2nR1tNyVwHZCEhPisjwDNmm1cjoGZkC5mKIFzKkWyqdzWVpCnJWHeXpcJKoS6MQtqq+LhfnAQ25htqpyzIfNaRRlnJLdAW1rwFJFkE2qr335+YWLZGbMq2KwVsqerluYOvGmifKBq0SD3lYoD/2NMBZyUzJeNlrf45OE1seUuCEI5KTgZtc2SjVMd4ll7rDoeDGUZ1E+Go+KFRP6xr1rcccop10zrhPFaQoQofBKe3ZorFJuEXukY26hpa4/f9dFDLHkOd+VuxmVufO1aybztI5XiP+Tddt+QKWyJb5icbV0/1QI31vi7rOMKIYSM2TTHhmStuKPp+hfIJmdMXV/GmrdredCCkC9u+v1ldqtrp5vVXEzqHeDCgghiiXxtbAoWyRrO1go7lWfvmLYd5s7QpaMUOTZpfdduliuianl08rUgPa0eiIGMxwXLPpTRqc6bnPU/jK38kmPsdd8aJasLUw+NMgGk19FCcjoBj6nfBFyy3Rl9AHV7tGJFHIL6EuCNGRdruoup6BrdP7SrQSXhDCRQpFPvlH+mFMua6zkh57tzmeKNawY+RnKNWESZX/o8Z/ewuqYj9wXE5kqMZE64H7nh92V/PQWkHEBIOSZK13kKmciNdLV696vqva391Z31MKE2suYSHtkAv0V/lqcinpVkgMxUWup6EeTjmS9ngl6N0eZP9rPaMfCw/ULiIzI37oSf8IxrN+mzD1cE4jDWBHNFcrYvbrQCD+q2SNqskYyM9PqiSPgP46/AXoFNkxBLvgnAAAAAElFTkSuQmCC" alt="" />
+          <img
+            class="m-4 w-8 h-8 cursor-pointer hover:text-purple-300"
+            src="data:image/png;base64,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"
+            alt=""
+          />
+          <h1 class="m-4 font-bold text-lg cursor-pointer hover:text-purple-300">signup</h1>
+        </div>
+      </div>
+    </nav>
+    <section class="section1 shadow-2xl">
+      <div class="flex flex-col justify-center items-center mt-[5rem]">
+        <h1 class="w-fit font-bold text-[5rem]">EDGE STORE</h1>
+        <p class="font-bold text-[1rem] tracking-[0.2rem] p-2">
+          The image storage all developers dream of.
+        </p>
+        <p class="font-bold mb-8">Working with images should be easy.</p>
+        <button
+          class="bg-violet-800 p-3 font-bold rounded-lg hover:bg-violet-950"
+        >
+          APPLY FOR EARLY ACCESS
+        </button>
+      </div>
+      <div class="shadow-2xl shadow-black shadowing mt-4 bg-purple-950">
+        <div class="flex flex-col">
+          <h1 class="font-bold text-4xl m-auto mt-8">Why Edge Store</h1>
+          <p class="text-base m-auto w-1/2 mt-8 pb-10">
+            Edge Store is a simple image storage for all project sizes. It is
+            designed to be easy to use and easy to integrate into your project.
+            It is built leveraging s3, cloudfront and lambda@edge to give you a
+            fast, reliable and secure image storage.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="section2 bg-black h-screen flex flex-wrap justify-center py-24 md:justify-between px-32"
+    >
+      <!-- <div
+        class="my-20 flex w-full max-w-4xl flex-wrap justify-center px-6 md:justify-between"
+      > -->
+      <div
+        class="my-4 min-h-[170px] w-[20%] rounded-lg p-6 shadow-[0px_0px_19px_0px_theme(colors.violet.900)] md:w-[30%]"
+      >
+        <h1 class="font-bold text-lg mb-4">Easy to use</h1>
+        <p class="text-base text-gray-500">
+          Use our server side and client side libraries to easily integrate Edge
+          Store into your project.
+        </p>
+      </div>
+      <div
+        class="my-4 min-h-[170px] w-[20%] rounded-lg p-6 shadow-[0px_0px_19px_0px_theme(colors.violet.900)] md:w-[30%]"
+      >
+        <h1 class="font-bold text-lg mb-4">Easy to use</h1>
+        <p class="text-base text-gray-500">
+          Use our server side and client side libraries to easily integrate Edge
+          Store into your project.
+        </p>
+      </div>
+      <div
+        class="my-4 min-h-[170px] w-[20%] rounded-lg p-6 shadow-[0px_0px_19px_0px_theme(colors.violet.900)] md:w-[30%]"
+      >
+        <h1 class="font-bold text-lg mb-4">Easy to use</h1>
+        <p class="text-base text-gray-500">
+          Use our server side and client side libraries to easily integrate Edge
+          Store into your project.
+        </p>
+      </div>
+      <div
+        class="my-4 min-h-[170px] w-[20%] rounded-lg p-6 shadow-[0px_0px_19px_0px_theme(colors.violet.900)] md:w-[30%]"
+      >
+        <h1 class="font-bold text-lg mb-4">Easy to use</h1>
+        <p class="text-base text-gray-500">
+          Use our server side and client side libraries to easily integrate Edge
+          Store into your project.
+        </p>
+      </div>
+      <div
+        class="my-4 min-h-[170px] w-[20%] rounded-lg p-6 shadow-[0px_0px_19px_0px_theme(colors.violet.900)] md:w-[30%]"
+      >
+        <h1 class="font-bold text-lg mb-4">Easy to use</h1>
+        <p class="text-base text-gray-500">
+          Use our server side and client side libraries to easily integrate Edge
+          Store into your project.
+        </p>
+      </div>
+      <div
+        class="my-4 min-h-[170px] w-[20%] rounded-lg p-6 shadow-[0px_0px_19px_0px_theme(colors.violet.900)] md:w-[30%]"
+      >
+        <h1 class="font-bold text-lg mb-4">Pay as you grow</h1>
+        <p class="text-base text-gray-500">
+          As your project grows, you can upgrade your plan to get more storage
+          and more bandwidth.
+        </p>
+      </div>
+      <!-- </div> -->
+    </section>
+    <section class="section3 bg-black h-screen flex flex-wrap justify-center">
+      <div class="flex flex-col">
+        <div class="head w-[52%] mx-auto mb-4">
+          <h1 class="font-bold text-[2rem] items-center ml-[6rem]">
+            Step 1 - Server
+          </h1>
+          <p class="text-base">
+            Add the service environment variables to your Next.js app. Then
+            export the Edge Store API from the Next.js API routes.
+          </p>
+        </div>
+        <div class="head w-[52%] mx-auto mb-8">
+          <h1 class="font-bold text-[2rem] items-center ml-[6rem]">
+            Step 2 - Client
+          </h1>
+          <p class="text-base mt-4">
+            Wrap your app with the Edge Store provider component. This will
+            enable you to access Edge Store methods anywhere in your app.
+          </p>
+        </div>
+        <div class="head w-[52%] mx-auto">
+          <h1 class="font-bold text-[2rem] items-center ml-[6rem]">
+            Step 3 - Start Using
+          </h1>
+          <p class="text-base mt-4">
+            Use the useEdgeStore hook to upload and fetch images from Edge
+            Store. You can also use Edge Store features like:
+            <div class="ml-4">
+                <li>Getting real-time progress of image uploads</li>
+                <li>Controlling access to images with permissions</li>
+                <li>Optimizing images for different devices and resolutions</li>
+                <li>And more</li>
+            </div>
+            
+          </p>
+        </div>
+        <div class="m-auto">
+            <button
+                class="bg-violet-800 p-3 font-bold rounded-lg hover:bg-violet-950 w-fit items-center"
+            >
+                APPLY FOR EARLY ACCESS
+            </button>
+        </div>
+        <!-- <button
+          class="bg-violet-800 p-3 font-bold rounded-lg hover:bg-violet-950 w-fit items-center"
+        >
+          APPLY FOR EARLY ACCESS
+        </button> -->
+      </div>
+    </section>
+    <footer class="bg-[#303846] flex justify-evenly p-8">
+        <div class="docs">
+            <h1 class="font-bold text-lg">Docs</h1>
+            <a  class="p-2"  href="">Tutorial</a>
+        </div>
+        <div class="community">
+            <h1 class="font-bold text-lg">Community</h1>
+            <div class="flex flex-col">
+                <a class=" p-2"  href="">Youtube</a>
+                <a  class="p-2" href="">Discord</a>
+            </div>
+            <!-- <a href="">Youtube</a>
+            <a href="">Discord</a> -->
+        </div>
+        <div class="more">
+            <h1 class="font-bold text-lg">More</h1>
+            <a class="p-2"  href="">Github</a>
+        </div>
+    </footer>
+  </body>
+</html>
