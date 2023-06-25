@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook- Login or Signup</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  </head>
+  <body class="bg-gray-200">
+    <div class="container flex justify-center items-center m-auto mt-52">
+      <div class="right w-1/4">
+        <img class="w-40" src="facebook.svg" alt="facebook icon" />
+        <p class="text-lg mx-4">
+          Facebook helps you connect and share with the people you love.
+        </p>
+      </div>
+      <div
+        class="left bg-white flex flex-col mx-10 w-1/4 p-5 rounded-lg shadow-lg"
+      >
+        <input
+          class="p-3 border my-2 focus:outline-gray-100"
+          onfocus="this.placeholder=''"
+          placeholder="Enter your email or phone Number"
+          onblur="this.placeholder='Enter your email or phone Number'"
+          type="email"
+        />
+        <input
+          class="p-3 border my-2 focus:outline-gray-100"
+          type="password"
+          placeholder="Password"
+        />
+        <button class="bg-blue-600 text-white p-2 rounded-md">Log In</button>
+        <span
+          class="items-center text-blue-500 hover:underline cursor-pointer mx-auto p-2"
+          >Forgotten password?</span
+        >
+        <!-- <hr class="font-bold" /> -->
+        <div class="w-full border border-black m-auto opacity-20"></div>
+        <button
+          class="bg-green-600 text-white p-2 rounded-md w-fit mx-auto my-2"
+        >
+          Create New Account
+        </button>
+      </div>
+    </div>
+    <div class="absolute left-1/2 my-5">
+      <p class="text-xs mx-7">
+        <span class="font-bold">Create a Page </span>
+        for a celebrity, band or business.
+      </p>
+    </div>
+  </body>
+</html>
